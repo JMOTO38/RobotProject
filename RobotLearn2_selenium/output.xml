@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.5 on win32)" generated="20210521 14:25:01.687" rpa="false">
+<suite id="s1" name="RobotLearn2 selenium" source="D:\Users\WKDV38\Desktop\Eclipse Workspace\RobotLearn2_selenium">
+<suite id="s1-s1" name="Test" source="D:\Users\WKDV38\Desktop\Eclipse Workspace\RobotLearn2_selenium\test">
+<suite id="s1-s1-s1" name="TestSuite1" source="D:\Users\WKDV38\Desktop\Eclipse Workspace\RobotLearn2_selenium\test\TestSuite1.robot">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in Test Suite Setup</arg>
+</arguments>
+<msg timestamp="20210521 14:25:02.138" level="INFO">I am in Test Suite Setup</msg>
+<status status="PASS" starttime="20210521 14:25:02.138" endtime="20210521 14:25:02.138"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="MyFirstTest">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in Test Suite Setup</arg>
+</arguments>
+<msg timestamp="20210521 14:25:02.139" level="INFO">I am in Test Suite Setup</msg>
+<status status="PASS" starttime="20210521 14:25:02.139" endtime="20210521 14:25:02.139"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello World...</arg>
+</arguments>
+<msg timestamp="20210521 14:25:02.140" level="INFO">Hello World...</msg>
+<status status="PASS" starttime="20210521 14:25:02.140" endtime="20210521 14:25:02.140"></status>
+</kw>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in test Suite Teardown</arg>
+</arguments>
+<msg timestamp="20210521 14:25:02.141" level="INFO">I am in test Suite Teardown</msg>
+<status status="PASS" starttime="20210521 14:25:02.140" endtime="20210521 14:25:02.141"></status>
+</kw>
+<tags>
+<tag>Simple</tag>
+</tags>
+<status status="PASS" starttime="20210521 14:25:02.139" endtime="20210521 14:25:02.141" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="FirstSeleniumTest">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in Test Suite Setup</arg>
+</arguments>
+<msg timestamp="20210521 14:25:02.142" level="INFO">I am in Test Suite Setup</msg>
+<status status="PASS" starttime="20210521 14:25:02.142" endtime="20210521 14:25:02.142"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210521 14:25:02.143" level="INFO">Opening browser 'chrome' to base url 'https://google.com'.</msg>
+<status status="PASS" starttime="20210521 14:25:02.142" endtime="20210521 14:25:03.930"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<status status="PASS" starttime="20210521 14:25:03.931" endtime="20210521 14:25:03.932"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>Automation step by step</arg>
+</arguments>
+<msg timestamp="20210521 14:25:03.933" level="INFO">Typing text 'Automation step by step' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20210521 14:25:03.933" endtime="20210521 14:25:04.047"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20210521 14:25:04.048" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20210521 14:25:04.365" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20210521 14:25:04.366" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20210521 14:25:04.048" endtime="20210521 14:25:05.371"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1.5s</arg>
+</arguments>
+<msg timestamp="20210521 14:25:06.874" level="INFO">Slept 1 second 500 milliseconds</msg>
+<status status="PASS" starttime="20210521 14:25:05.371" endtime="20210521 14:25:06.874"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210521 14:25:06.874" endtime="20210521 14:25:09.434"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20210521 14:25:09.435" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20210521 14:25:09.434" endtime="20210521 14:25:09.435"></status>
+</kw>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in test Suite Teardown</arg>
+</arguments>
+<msg timestamp="20210521 14:25:09.436" level="INFO">I am in test Suite Teardown</msg>
+<status status="PASS" starttime="20210521 14:25:09.435" endtime="20210521 14:25:09.436"></status>
+</kw>
+<tags>
+<tag>Selenium</tag>
+</tags>
+<status status="PASS" starttime="20210521 14:25:02.141" endtime="20210521 14:25:09.436" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t3" name="SampleLoginTest">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in Test Suite Setup</arg>
+</arguments>
+<msg timestamp="20210521 14:25:09.437" level="INFO">I am in Test Suite Setup</msg>
+<status status="PASS" starttime="20210521 14:25:09.437" endtime="20210521 14:25:09.437"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210521 14:25:09.438" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20210521 14:25:09.438" endtime="20210521 14:25:11.289"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2.5s</arg>
+</arguments>
+<status status="PASS" starttime="20210521 14:25:11.289" endtime="20210521 14:25:11.291"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>@{CREDENTIALS}[0]</arg>
+</arguments>
+<msg timestamp="20210521 14:25:11.291" level="WARN">Accessing variable items using '@{CREDENTIALS}[0]' syntax is deprecated. Use '${CREDENTIALS}[0]' instead.</msg>
+<msg timestamp="20210521 14:25:11.292" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20210521 14:25:11.291" endtime="20210521 14:25:11.364"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>&amp;{LoginData}[password]</arg>
+</arguments>
+<msg timestamp="20210521 14:25:11.365" level="WARN">Accessing variable items using '&amp;{LoginData}[password]' syntax is deprecated. Use '${LoginData}[password]' instead.</msg>
+<msg timestamp="20210521 14:25:11.366" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20210521 14:25:11.402" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210521 14:25:11.438" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210521 14:25:11.365" endtime="20210521 14:25:11.438"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20210521 14:25:11.439" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20210521 14:25:11.438" endtime="20210521 14:25:12.269"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=welcome</arg>
+</arguments>
+<msg timestamp="20210521 14:25:12.270" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" starttime="20210521 14:25:12.269" endtime="20210521 14:25:12.310"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=Logout</arg>
+</arguments>
+<msg timestamp="20210521 14:25:12.310" level="INFO">Clicking element 'link=Logout'.</msg>
+<status status="PASS" starttime="20210521 14:25:12.310" endtime="20210521 14:25:12.723"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1.5s</arg>
+</arguments>
+<msg timestamp="20210521 14:25:14.225" level="INFO">Slept 1 second 500 milliseconds</msg>
+<status status="PASS" starttime="20210521 14:25:12.723" endtime="20210521 14:25:14.225"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210521 14:25:14.225" endtime="20210521 14:25:16.697"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test completed</arg>
+</arguments>
+<msg timestamp="20210521 14:25:16.698" level="INFO">Test completed</msg>
+<status status="PASS" starttime="20210521 14:25:16.697" endtime="20210521 14:25:16.698"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This Test was executed on %{USERNAME} on %{os}</arg>
+</arguments>
+<msg timestamp="20210521 14:25:16.699" level="INFO">This Test was executed on WKDV38 on Windows_NT</msg>
+<status status="PASS" starttime="20210521 14:25:16.698" endtime="20210521 14:25:16.699"></status>
+</kw>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in test Suite Teardown</arg>
+</arguments>
+<msg timestamp="20210521 14:25:16.699" level="INFO">I am in test Suite Teardown</msg>
+<status status="PASS" starttime="20210521 14:25:16.699" endtime="20210521 14:25:16.699"></status>
+</kw>
+<doc>This is a simple login selinuim test</doc>
+<tags>
+<tag>Selenium</tag>
+</tags>
+<status status="PASS" starttime="20210521 14:25:09.436" endtime="20210521 14:25:16.699" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t4" name="KeyWordTest">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in Test Suite Setup</arg>
+</arguments>
+<msg timestamp="20210521 14:25:16.701" level="INFO">I am in Test Suite Setup</msg>
+<status status="PASS" starttime="20210521 14:25:16.701" endtime="20210521 14:25:16.701"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210521 14:25:16.702" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20210521 14:25:16.701" endtime="20210521 14:25:18.543"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2.5s</arg>
+</arguments>
+<status status="PASS" starttime="20210521 14:25:18.543" endtime="20210521 14:25:18.545"></status>
+</kw>
+<kw name="LoginKW">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>@{CREDENTIALS}[0]</arg>
+</arguments>
+<msg timestamp="20210521 14:25:18.546" level="WARN">Accessing variable items using '@{CREDENTIALS}[0]' syntax is deprecated. Use '${CREDENTIALS}[0]' instead.</msg>
+<msg timestamp="20210521 14:25:18.546" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20210521 14:25:18.546" endtime="20210521 14:25:18.617"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>&amp;{LoginData}[password]</arg>
+</arguments>
+<msg timestamp="20210521 14:25:18.618" level="WARN">Accessing variable items using '&amp;{LoginData}[password]' syntax is deprecated. Use '${LoginData}[password]' instead.</msg>
+<msg timestamp="20210521 14:25:18.618" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20210521 14:25:18.652" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210521 14:25:18.687" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210521 14:25:18.617" endtime="20210521 14:25:18.688"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20210521 14:25:18.688" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20210521 14:25:18.688" endtime="20210521 14:25:19.620"></status>
+</kw>
+<status status="PASS" starttime="20210521 14:25:18.545" endtime="20210521 14:25:19.620"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=welcome</arg>
+</arguments>
+<msg timestamp="20210521 14:25:19.621" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" starttime="20210521 14:25:19.621" endtime="20210521 14:25:19.661"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=Logout</arg>
+</arguments>
+<msg timestamp="20210521 14:25:19.662" level="INFO">Clicking element 'link=Logout'.</msg>
+<status status="PASS" starttime="20210521 14:25:19.662" endtime="20210521 14:25:20.144"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1.5s</arg>
+</arguments>
+<msg timestamp="20210521 14:25:21.647" level="INFO">Slept 1 second 500 milliseconds</msg>
+<status status="PASS" starttime="20210521 14:25:20.144" endtime="20210521 14:25:21.647"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210521 14:25:21.647" endtime="20210521 14:25:24.228"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test completed</arg>
+</arguments>
+<msg timestamp="20210521 14:25:24.229" level="INFO">Test completed</msg>
+<status status="PASS" starttime="20210521 14:25:24.228" endtime="20210521 14:25:24.229"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This Test was executed on %{USERNAME} on %{os}</arg>
+</arguments>
+<msg timestamp="20210521 14:25:24.230" level="INFO">This Test was executed on WKDV38 on Windows_NT</msg>
+<status status="PASS" starttime="20210521 14:25:24.229" endtime="20210521 14:25:24.230"></status>
+</kw>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in test Suite Teardown</arg>
+</arguments>
+<msg timestamp="20210521 14:25:24.230" level="INFO">I am in test Suite Teardown</msg>
+<status status="PASS" starttime="20210521 14:25:24.230" endtime="20210521 14:25:24.230"></status>
+</kw>
+<doc>This is a simple login selinuim test using tags</doc>
+<tags>
+<tag>Selenium</tag>
+</tags>
+<status status="PASS" starttime="20210521 14:25:16.700" endtime="20210521 14:25:24.232" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t5" name="TagTest">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in Test Suite Setup</arg>
+</arguments>
+<msg timestamp="20210521 14:25:24.233" level="INFO">I am in Test Suite Setup</msg>
+<status status="PASS" starttime="20210521 14:25:24.233" endtime="20210521 14:25:24.233"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TagTest</arg>
+</arguments>
+<msg timestamp="20210521 14:25:24.234" level="INFO">TagTest</msg>
+<status status="PASS" starttime="20210521 14:25:24.234" endtime="20210521 14:25:24.234"></status>
+</kw>
+<kw name="Set Tags" library="BuiltIn">
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>regression1</arg>
+</arguments>
+<msg timestamp="20210521 14:25:24.234" level="INFO">Set tag 'regression1'.</msg>
+<status status="PASS" starttime="20210521 14:25:24.234" endtime="20210521 14:25:24.234"></status>
+</kw>
+<kw name="Remove Tags" library="BuiltIn">
+<doc>Removes given ``tags`` from the current test or all tests in a suite.</doc>
+<arguments>
+<arg>regression1</arg>
+</arguments>
+<msg timestamp="20210521 14:25:24.235" level="INFO">Removed tag 'regression1'.</msg>
+<status status="PASS" starttime="20210521 14:25:24.235" endtime="20210521 14:25:24.235"></status>
+</kw>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in test Suite Teardown</arg>
+</arguments>
+<msg timestamp="20210521 14:25:24.236" level="INFO">I am in test Suite Teardown</msg>
+<status status="PASS" starttime="20210521 14:25:24.236" endtime="20210521 14:25:24.236"></status>
+</kw>
+<tags>
+<tag>Not Selenium</tag>
+</tags>
+<status status="PASS" starttime="20210521 14:25:24.232" endtime="20210521 14:25:24.236" critical="yes"></status>
+</test>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am in test Suite Teardown</arg>
+</arguments>
+<msg timestamp="20210521 14:25:24.237" level="INFO">I am in test Suite Teardown</msg>
+<status status="PASS" starttime="20210521 14:25:24.237" endtime="20210521 14:25:24.237"></status>
+</kw>
+<status status="PASS" starttime="20210521 14:25:01.787" endtime="20210521 14:25:24.237"></status>
+</suite>
+<status status="PASS" starttime="20210521 14:25:01.783" endtime="20210521 14:25:24.240"></status>
+</suite>
+<status status="PASS" starttime="20210521 14:25:01.760" endtime="20210521 14:25:24.243"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Not Selenium</stat>
+<stat pass="3" fail="0">Selenium</stat>
+<stat pass="1" fail="0">Simple</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="RobotLearn2 selenium">RobotLearn2 selenium</stat>
+<stat pass="5" fail="0" id="s1-s1" name="Test">RobotLearn2 selenium.Test</stat>
+<stat pass="5" fail="0" id="s1-s1-s1" name="TestSuite1">RobotLearn2 selenium.Test.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210521 14:25:11.291" level="WARN">Accessing variable items using '@{CREDENTIALS}[0]' syntax is deprecated. Use '${CREDENTIALS}[0]' instead.</msg>
+<msg timestamp="20210521 14:25:11.365" level="WARN">Accessing variable items using '&amp;{LoginData}[password]' syntax is deprecated. Use '${LoginData}[password]' instead.</msg>
+<msg timestamp="20210521 14:25:18.546" level="WARN">Accessing variable items using '@{CREDENTIALS}[0]' syntax is deprecated. Use '${CREDENTIALS}[0]' instead.</msg>
+<msg timestamp="20210521 14:25:18.618" level="WARN">Accessing variable items using '&amp;{LoginData}[password]' syntax is deprecated. Use '${LoginData}[password]' instead.</msg>
+</errors>
+</robot>
