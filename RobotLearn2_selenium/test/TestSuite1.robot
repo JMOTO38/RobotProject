@@ -6,10 +6,11 @@ Suite Teardown    Log    I am in test Suite Teardown
 Test Setup    Log    I am in Test Suite Setup   
 Test Teardown    Log    I am in test Suite Teardown 
 
-Default Tags    SuiteTag  
+Default Tags    NonTaggedCasesWillHave  #only adds tag if the test does not have a tag
+Force Tags    All_Test_Will_Have_This_Tag
 *** Test Cases ***
 MyFirstTest
-    [Tags]    Simple
+    [Tags]    Simple    Hello World
     Log    Hello World...    
     
 FirstSeleniumTest
@@ -56,11 +57,25 @@ TagTest
     Log    TagTest    
     Set Tags    regression1
     Remove Tags    regression1
+    
+CompareSTringsTest
+    [Tags]    compare
+    Should Be Equal As Strings    ${s1}    ${s1}  
+  
+MathTest
+    [Tags]    Math
+    The result of 22+2 should be 24
 *** Variables ***
 ${URL}    https://opensource-demo.orangehrmlive.com/ 
 @{CREDENTIALS}    Admin    admin123
 &{LoginData}    usename=Admin    password=admin123
+${s1}   MyString
+${s2}    MyString    
 *** Keywords ***
+The result of ${calculation} should be ${expected}
+    ${result} =    Evaluate    ${calculation}
+    ${expected} =    Convert To Integer    ${expected} 
+    Should Be Equal    ${result}     ${expected}
 LoginKW
     Input Text    id=txtUsername    @{CREDENTIALS}[0]    
     Input Password    id=txtPassword    &{LoginData}[password]    
